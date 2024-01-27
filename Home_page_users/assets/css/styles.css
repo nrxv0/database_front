@@ -18,7 +18,7 @@ body {
   --dark-color: hsl(212, 40%, 12%);
   --white-color: hsl(212, 4%, 95%);
   --body-color: #E1D9E7;
-  --container-color: #594F61;
+  --container-color: #771BCC;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -47,7 +47,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: var(--first-color);
+  color: white;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -77,12 +77,40 @@ img {
   height: auto;
 }
 
+
+.event-intro {
+  background-color: #f8f8f8; /* Set background color */
+  padding: 20px; /* Add padding for space inside the section */
+  text-align: center; /* Center-align text within the section */
+  margin-top: 130px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 0;
+}
+
+.events-title {
+  color: #333; /* Set text color */
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add margin at the bottom for spacing */
+}
+
+.event-p {
+  color: #666; /* Set text color */
+  font-size: 16px; /* Set font size */
+  line-height: 1.5; /* Set line height for better readability */
+}
+
+
+
+
+
 /*=============== CARD ===============*/
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
+  margin-top: 0;
 }
 
 .card__container {
@@ -103,13 +131,13 @@ img {
 
 .card__image {
   position: relative;
-  background-color: var(--first-color-light);
+  background-color: white;
   padding-top: 1.5rem;
   margin-bottom: -.75rem;
 }
 
 .card__data {
-  background-color: var(--container-color);
+  background-color: white;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -127,7 +155,7 @@ img {
 .card__shadow {
   width: 200px;
   height: 200px;
-  background-color: var(--first-color-alt);
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   top: 3.75rem;
@@ -139,23 +167,44 @@ img {
 
 .card__name {
   font-size: var(--h2-font-size);
-  color: var(--second-color);
+  color: #333;
   margin-bottom: .75rem;
 }
 
 .card__description {
   font-weight: 500;
   margin-bottom: 1.75rem;
+  color: #333;
 }
 
-.card__button {
+/* .card__button {
   display: inline-block;
   background-color: var(--first-color);
   padding: .75rem 1.5rem;
   border-radius: .25rem;
   color: var(--dark-color);
   font-weight: 600;
+} */
+
+.button-container {
+  display: flex;
+  flex-direction: column;
 }
+
+.card__button, .join-button {
+  /* Add any other styles you want for the buttons */
+  margin-bottom: 10px; /* Optional: Add some margin between the buttons */
+  background-color: #771BCC;
+    color: white; /* Set text color to black for better visibility */
+    padding: 10px;
+    text-decoration: none; /* Remove default underline on links */
+    border: 1px solid #ccc; /* Add a border for a subtle separation */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    margin-bottom: 10px; /* Optional: Add some margin between the buttons */
+    display: inline-block; 
+}
+
+
 
 /* Swiper class */
 .swiper-button-prev:after,
@@ -259,8 +308,11 @@ ul {
 /*footer*/
 
 .footer {
-	background-color: #594F61;
-	/* padding: 70px 0; */
+	background-color: #771BCC;
+	padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-col {
