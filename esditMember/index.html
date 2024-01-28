@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Memebrs</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i>Club scientific</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Members</a></li>
+			<li class="divider" data-text="main">Quick Access</li>
+			
+			<li><a href="#"><i class='bx bxs-chart icon' ></i> Dashboard</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i> Departements</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i> Members</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon' ></i> Events</a></li>
+			
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Log Out</a>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<!-- <a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">8</span>
+			</a> -->
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<div class="form-container">
+			<form action="edit_member.php" method="post">
+				<h2>Edit Member</h2>
+	
+				<label for="memberID">Member ID:</label>
+				<input type="text" id="memberID" name="memberID" readonly>
+	
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="fname" required>
+	
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lname" required>
+	
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob">
+	
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+	
+				<label for="discord">Discord:</label>
+				<input type="text" id="discord" name="discord">
+	
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+	
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password">
+	
+				<label for="school_year">School Year:</label>
+				<input type="text" id="school_year" name="school_year">
+	
+				<label for="university">University:</label>
+				<input type="text" id="university" name="university">
+	
+				<label for="skills">Skills:</label>
+				<input type="text" id="skills" name="skills">
+	
+				<label for="departement">Department:</label>
+				<select id="departement" name="departement">
+					<option value="logistics">Logistics</option>
+					<option value="development">Development</option>
+					<option value="relax">Relax</option>
+					<option value="communication">Communication</option>
+					<option value="design">Design</option>
+				</select>
+	
+				<label for="role">Role:</label>
+				<select id="role" name="role">
+					<option value="Member">Member</option>
+					<option value="Manager">Manager</option>
+				</select>
+	
+				<button type="submit">Save Changes</button>
+			</form>
+		</div>
+	
+<!-- footer -->
+<footer class="footer">
+	<div class="container">
+	  <div class="row">
+		<div class="footer-col">
+		  <h4>Home</h4>
+		  <ul>
+			<li><a href="#">Dashboard</a></li>
+			<li><a href="#">Departements</a></li>
+			<li><a href="#">Members</a></li>
+			<li><a href="#">Events</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Links</h4>
+		  <ul>
+			<li><a href="#">Bejaia, Algeria</a></li>
+			<li><a href="#">+1.555.555.5555 </a></li>
+			<li><a href="#">support@company.com</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>About us</h4>
+		  <ul>
+			<li><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  accusantium dicta praesentium veritatis earum, voluptatem excepturi necessitatibus dolores aut libero. Aperiam omnis excepturi tempora veniam ut delectus?</a></li>
+
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Siga</h4>
+		  <div class="social-links">
+			<a href="https://www.twitter.com" target="_blank"
+			  ><i class="fa-brands fa-x-twitter"></i></a
+			><!-- icone x (twitter) -->
+			<a href="https://www.instagram.com" target="_blank"
+			  ><i class="fab fa-instagram"></i></a
+			><!-- icone instagram -->
+			<a href="https://www.linkedin.com" target="_blank"
+			  ><i class="fab fa-linkedin-in"></i></a
+			><!-- icone linkedin -->
+			<a href="https://www.github.com" target="_blank"
+			  ><i class="fa-brands fa-github"></i></a
+			><!-- icone github -->
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
+
+  <!-- footer -->
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+</body>
+</html>
